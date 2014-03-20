@@ -22,11 +22,29 @@
     1. Mustache (https://github.com/janl/mustache.js)
     1. Handlebars (http://handlebarsjs.com/)
 1. Testing frameworks
-    1. TBD
+    1. Jasmine - BDD
+    1. Selenium
 1. (optional) WebSockets
 1. (optional) BE REST services
 1. (optional) BE web pages
 
+#### Tasks:
+1. (>) Javascript basics:
+    1. Literals
+    1. Types
+    1. Statements
+    1. Expressions
+    1. Functions
+1. Javascript medium:
+    1. Objects
+    1. Arrays
+    1. Inheritance
+    1. Regular expressions
+    1. Awful and bad parts
+    1. commons/useful API (date, print, etc)
+
+#### Project. After learning the basics of the Web FE the knowledge will be used to create a project ('happygroup', a site for socializing).
+The requirements: TBD
 
 #### Refcards:
 1. AJAX
@@ -61,3 +79,11 @@
 1. Twitter Bootstrap Web Development How-To
 1. Instant LESS CSS Preprocessor
 1. Instant Handlebars.js
+1. JavaScript The Definitive Guide 6th Ed
+1. Selenium 2 Testing Tools- Beginner's Guide
+1. Jasmine JavaScript Testing
+
+#### Tutorials
+1. https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
+1. http://bonsaiden.github.io/JavaScript-Garden/
+
