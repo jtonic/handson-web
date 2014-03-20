@@ -35,6 +35,7 @@
     1. Statements
     1. Expressions
     1. Functions
+    1. Exceptions
 1. Javascript medium:
     1. Objects
     1. Arrays
