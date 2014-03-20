@@ -46,3 +46,18 @@
 1. (http://refcardz.dzone.com/refcardz/core-json)
 
 ####Books:
+1. AngularJS in Action
+1. Backbone.js in Action
+1. CSS The Missing Manual
+1. Dependency Injection with AngularJS
+1. Ember.js in Action
+1. Instant Dependency Management with RequireJS
+1. JavaScript: The Good Parts
+1. jQuery in Action, Second Edition
+1. Pro HTML5 and CSS3 Design Patterns
+1. Pro jQuery
+1. Sass and Compass in Action
+1. The Definitive Guide to HTML5 WebSocket
+1. Twitter Bootstrap Web Development How-To
+1. Instant LESS CSS Preprocessor
+1. Instant Handlebars.js
