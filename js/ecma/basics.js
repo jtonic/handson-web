@@ -120,34 +120,61 @@ console.log("multilineStr: "+ multilineStr);
 console.log("Infinity: " + Infinity);
 
 
+console.log("=====================================================================");
+console.log("The check for is not null or false. Version 1: arg1 !== null && arg1 !== false ");
+console.log("=====================================================================");
 var isNotNullOrFalse = function (arg1) {
-  if(arg1 !== null && arg1 !== false) {
+    if(arg1 !== null && arg1 !== false) {
       return "The arg1 '" + arg1 + "' is not null and not false.";
   } else {
       return "The arg1 '" + arg1 + "' is null or false.";
   }
 };
 
-console.log("=====================================================================");
-console.log("The check for is not null or false. Version 1.");
-console.log("=====================================================================");
 console.log("isNotNullOrFalse(false): " + isNotNullOrFalse(false));
 console.log("isNotNullOrFalse(null): " + isNotNullOrFalse(null));
 console.log("isNotNullOrFalse(undefined): " + isNotNullOrFalse(undefined));
 console.log("isNotNullOrFalse(0): " + isNotNullOrFalse(0));
 console.log("isNotNullOrFalse(NaN): " + isNotNullOrFalse(NaN));
+console.log("isNotNullOrFalse(''): " + isNotNullOrFalse(""));
+console.log("isNotNullOrFalse('aaa'): " + isNotNullOrFalse("aaa"));
 
+console.log("=====================================================================");
+console.log("The check for is not null or false. Version 2: arg1");
+console.log("=====================================================================");
 isNotNullOrFalse = function (arg1) {
-  if(!arg1) {
-      return "The arg1 '" + arg1 + "' is not null or false";
+  if(arg1) {
+      return "The arg1 '" + arg1 + "' is not null and not false.";
+  } else {
+      return "The arg1 '" + arg1 + "' is null or false.";
   }
 };
 
-console.log("=====================================================================");
-console.log("The check for is not null or false. Version 2");
-console.log("=====================================================================");
 console.log("isNotNullOrFalse(false): " + isNotNullOrFalse(false));
 console.log("isNotNullOrFalse(null): " + isNotNullOrFalse(null));
 console.log("isNotNullOrFalse(undefined): " + isNotNullOrFalse(undefined));
 console.log("isNotNullOrFalse(0): " + isNotNullOrFalse(0));
 console.log("isNotNullOrFalse(NaN): " + isNotNullOrFalse(NaN));
+console.log("isNotNullOrFalse(''): " + isNotNullOrFalse(""));
+console.log("isNotNullOrFalse('aaa'): " + isNotNullOrFalse("aaa"));
+console.log("isNotNullOrFalse([]): " + isNotNullOrFalse([]));
+console.log("isNotNullOrFalse([][0]): " + isNotNullOrFalse([][0]));
+
+console.log("=====================================================================");
+console.log("The check for is not null or false. Version 3: arg1 !== null && arg1");
+console.log("=====================================================================");
+isNotNullOrFalse = function (arg1) {
+  if(arg1 !== null && arg1) {
+      return "The arg1 '" + arg1 + "' is not null and not false";
+  } else {
+      return "The arg1 '" + arg1 + "' is null or false.";
+  }
+};
+
+console.log("isNotNullOrFalse(false): " + isNotNullOrFalse(false));
+console.log("isNotNullOrFalse(null): " + isNotNullOrFalse(null));
+console.log("isNotNullOrFalse({}): " + isNotNullOrFalse({}));
+console.log("isNotNullOrFalse(''): " + isNotNullOrFalse(""));
+console.log("isNotNullOrFalse('aaaa'): " + isNotNullOrFalse("aaaa"));
+console.log("isNotNullOrFalse([]): " + isNotNullOrFalse([]));
+console.log("isNotNullOrFalse([][0]): " + isNotNullOrFalse([][0]));
