@@ -2,6 +2,9 @@
  * User: jtonic
  * Date: 7/16/13
  * Time: 11:11 PM
+ * This file contains simple examples about function declaration and invocation,
+ * variable declaration, assignment and reference, object declaration and reference
+ *
  */
 
 var name1 = 'Antonel Pazargic';
@@ -54,45 +57,4 @@ var p2 = new Point(2, 2);
 
 console.log("Point 1: " + p1.x + ", " + p1.y);
 console.log("Point 2: " + p2.x + ", " + p2.y);
-
-var falsy = function() {
-    var a = null;
-    if(!a) {
-        console.log("null is evaluated as false as logical condition")
-    }
-    if(!undefined) {
-        console.log("undefined is evaluated as false as logical condition")
-    }
-    a = NaN;
-    if(!a) {
-        console.log("NaN is evaluated as false as logical condition")
-    }
-    a = 0;
-    if(!a) {
-        console.log("0 is evaluated as false as logical condition")
-    }
-    a = 0.0;
-    if(!a) {
-        console.log("0.0 is evaluated as false as logical condition")
-    }
-    a = "";
-    if(!a) {
-        console.log("empty string is evaluated as false as logical condition")
-    }
-    a = false;
-    if(!a) {
-        console.log("false is evaluated as false as logical condition")
-    }
-};
-
-falsy();
-
-var falsy1 = function(arg1) {
-    if(!arg1) {
-        console.log(arg1 + " argument is resolved as false");
-    }
-};
-
-falsy1(null);
-falsy1(false);
 
