@@ -78,5 +78,76 @@ console.log("===================================================================
 console.log("Literals");
 console.log("=====================================================================");
 
+var float = 1.0;
+var float1 = .01;
+var integer1 = 10;
+var octal = 010;
+var hexa = 0x100;
+var str = "Antonel";
+function getCar(carName) {
+    return carName;
+}
+var obj = {
+    name: "Antonel Pazargic",
+    age: 44,
+    getCar: getCar("Honda")
+};
+var arr = [1, 2, , 4, , 6]; // for code clarity use [1, 2, undefined, 4, undefined, 6]
+var boo = false;
+var multilineStr = "Antonel\n\
+ este cel\n\
+ mai\n\
+ mare\n\
+ smecher\n\
+";
+
+console.log("integer:" + integer1);
+console.log("float: " + float);
+console.log("float1: " + float1);
+console.log("octal: " + octal);
+console.log("hexa: " + hexa);
+console.log("str: " + str);
+console.log("obj: " + obj);
+console.log("arr: " + arr);
+console.log("Boo: " + boo);
+console.log("arr[2]: " + arr[2]);
+console.log("obj.name: " + obj.name);
+console.log("obj.getCar: " + obj.getCar);
+
+console.log("Length of the str: ", str.length);
+console.log("multilineStr: "+ multilineStr);
+
+console.log("Infinity: " + Infinity);
 
 
+var isNotNullOrFalse = function (arg1) {
+  if(arg1 !== null && arg1 !== false) {
+      return "The arg1 '" + arg1 + "' is not null and not false.";
+  } else {
+      return "The arg1 '" + arg1 + "' is null or false.";
+  }
+};
+
+console.log("=====================================================================");
+console.log("The check for is not null or false. Version 1.");
+console.log("=====================================================================");
+console.log("isNotNullOrFalse(false): " + isNotNullOrFalse(false));
+console.log("isNotNullOrFalse(null): " + isNotNullOrFalse(null));
+console.log("isNotNullOrFalse(undefined): " + isNotNullOrFalse(undefined));
+console.log("isNotNullOrFalse(0): " + isNotNullOrFalse(0));
+console.log("isNotNullOrFalse(NaN): " + isNotNullOrFalse(NaN));
+
+isNotNullOrFalse = function (arg1) {
+  if(!arg1) {
+      return "The arg1 '" + arg1 + "' is not null or false";
+  }
+};
+
+console.log("=====================================================================");
+console.log("The check for is not null or false. Version 2");
+console.log("=====================================================================");
+console.log("isNotNullOrFalse(false): " + isNotNullOrFalse(false));
+console.log("isNotNullOrFalse(null): " + isNotNullOrFalse(null));
+console.log("isNotNullOrFalse(undefined): " + isNotNullOrFalse(undefined));
+console.log("isNotNullOrFalse(0): " + isNotNullOrFalse(0));
+console.log("isNotNullOrFalse(NaN): " + isNotNullOrFalse(NaN));
