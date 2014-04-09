@@ -3,3 +3,18 @@ h1 {
     color: red;
     font-family: Helvetica, Arial, sans-serif;
 }
+
+#container {
+    background: red;
+    position: static;
+}
+#div1, #div2 {
+    background: blue;
+    width: 400px;
+    margin: 0 auto; /* Center the inner divs and align them vertically in outer div. */
+    padding: 4px;
+    border: 1px solid white;
+}
+#div2 {
+    width: 500px;
+}
